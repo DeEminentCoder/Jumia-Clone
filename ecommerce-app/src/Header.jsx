@@ -1,108 +1,98 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import {
-  Navbar,
-  Nav,
-  Form,
-  FormControl,
-  Dropdown,
-} from "react-bootstrap";
 
 const Header = () => {
   return (
     <header>
       {/* Top Bar */}
-      <Navbar className="bg-light py-0">
+      <div className="top-bar bg-light py-0">
         <div className="container d-flex justify-content-between align-items-center">
-          <div href="#" className="d-flex align-items-center">
+          {/* Left Section */}
+          <div className="d-flex align-items-center">
             <img
               src="https://companieslogo.com/img/orig/JMIA-356fb835.png?t=1720244492"
-              alt=""
-              className="me-1"
-              width={15}
-            ></img>
-            <a href="" className="text-warning text-decoration-none fw-medium">
-              <small>Sell on Jumia</small>
+              alt="Sell on Jumia"
+              className="icon me-1"
+            />
+            <a href="#" className="text-warning text-decoration-none fw-medium">
+              <small className="">Sell on Jumia</small>
             </a>
           </div>
-          <div>
+          {/* Center Section */}
+          <div className="logos d-flex justify-content-center align-items-center">
             <img
               src="https://logolook.net/wp-content/uploads/2022/08/Jumia-Logo.png"
-              alt=""
-              className=""
-              width={60}
+              alt="Jumia Logo"
+              className="main-logo"
             />
             <img
               src="https://group-live.jumia.is/images/press/3by2/logo-jumia-pay.png"
-              alt=""
-              width={80}
+              alt="Jumia Pay Logo"
+              className="secondary-logo"
             />
           </div>
-          <div></div>
+          <div className="logos d-flex justify-content-center align-items-center">
+           
+          </div>
         </div>
-      </Navbar>
+      </div>
 
       {/* Main Header */}
-      <Navbar className="bg-white shadow-sm py-0">
+      <div className="main-header bg-white shadow-sm">
         <div className="container d-flex align-items-center justify-content-between">
           {/* Logo */}
-          <Navbar.Brand>
+          <div className="site-logo">
             <img
               src="https://logolook.net/wp-content/uploads/2022/08/Jumia-Logo.png"
-              alt="Site Logo"
-              width={150}
+              alt="Jumia Logo"
             />
-          </Navbar.Brand>
+          </div>
 
           {/* Search Bar */}
-          <Form className="d-flex flex-grow-1">
-            <FormControl
-              type="search"
+          <div className="search-bar d-flex align-items-center">
+            <input
+              type="text"
               placeholder="🔍 Search products, brands and categories"
-              className="me-2 py-2"
+              className="form-control"
             />
-            <button className="btn btn-warning px-4 text-light">
-              <span>Search</span>
-            </button>
-          </Form>
+            <button className="btn text-light">Search</button>
+          </div>
 
           {/* Account Dropdown */}
-          <Dropdown>
-            <Dropdown.Toggle variant="link" className="text-dark">
-              <i className="bi bi-person-circle me-2"></i> Simeon Kenny
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item href="#">Profile</Dropdown.Item>
-              <Dropdown.Item href="#">Settings</Dropdown.Item>
-              <Dropdown.Item href="#">Notifications</Dropdown.Item>
-              <Dropdown.Item href="#">Messages</Dropdown.Item>
-              <Dropdown.Divider />
-              <Dropdown.Item href="#" className="text-danger">
-                Logout
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          <div className="dropdown fs-1">
+            <button className="dropdown-btn">
+              <i className="bi bi-person-circle fs-4"></i>Hi, Simeon
+            </button>
+            <div className="dropdown-menu">
+              <a href="#">Profile</a>
+              <a href="#">Settings</a>
+              <a href="#">Notifications</a>
+              <a href="#">Messages</a>
+              <hr />
+              <a href="#" className="logout">Logout</a>
+            </div>
+          </div>
 
           {/* Help Dropdown */}
-          <Dropdown>
-            <Dropdown.Toggle variant="link" className="text-dark">
-              <i className="bi bi-question-circle me-2"></i> Help
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item href="#">Help Center</Dropdown.Item>
-              <Dropdown.Item href="#">FAQs</Dropdown.Item>
-              <Dropdown.Item href="#">Contact Us</Dropdown.Item>
-              <Dropdown.Item href="#">Terms & Policies</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          <div className="dropdown">
+            <button className="dropdown-btn">
+              <i className="bi bi-question-circle"></i> Help
+            </button>
+            <div className="dropdown-menu">
+              <a href="#">Help Center</a>
+              <a href="#">FAQs</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Terms & Policies</a>
+            </div>
+          </div>
 
           {/* Cart */}
-          <Nav.Link href="#" className="text-dark">
+          <div className="cart">
             <i className="bi bi-cart3"></i>
             <span className="badge bg-danger">3</span>
-          </Nav.Link>
+          </div>
         </div>
-      </Navbar>
+      </div>
     </header>
   );
 };
