@@ -37,6 +37,7 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Main Header */}
       <div className="main-header bg-white shadow-sm">
         <div className="container d-flex align-items-center justify-content-between">
           {/* Logo */}
