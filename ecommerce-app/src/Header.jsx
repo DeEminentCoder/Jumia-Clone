@@ -59,24 +59,24 @@ const Header = () => {
           </div>
 
           {/* Account Dropdown */}
-          <div className="dropdown fs-1">
-            <button className="dropdown-btn">
-              <i className="bi bi-person-circle fs-4"></i>Hi, Simeon
+          <div className="dropdown">
+            <button className="dropdown-btn btn d-flex">
+              <i className="bi bi-person fs-2"></i>Hi, Simeon
             </button>
             <div className="dropdown-menu">
-              <a href="#">Profile</a>
-              <a href="#">Settings</a>
-              <a href="#">Notifications</a>
-              <a href="#">Messages</a>
+              <a href="#" className="d-flex justify-content-around align-items-center gap-4"><i className="bi bi-person fs-3 me-2"></i> Profile</a>
+              <a href="#" className="d-flex justify-content-around align-items-center gap-4"><i className="bi bi-box fs-4 me-2"></i> orders</a>
+              <a href="#" className="d-flex justify-content-around align-items-center gap-4"><i className="bi bi-envelope fs-4 me-2"></i> inbox</a>
+              <a href="#" className="d-flex justify-content-around align-items-center gap-4"><i className="bi bi-tools fs-5 me-2"></i> Settings</a>
               <hr />
-              <a href="#" className="logout">Logout</a>
+              <a href="#" className="logout text-center">Logout</a>
             </div>
           </div>
 
           {/* Help Dropdown */}
           <div className="dropdown">
-            <button className="dropdown-btn">
-              <i className="bi bi-question-circle"></i> Help
+            <button className="dropdown-btn btn d-flex">
+              <i className="bi bi-question-circle fs-4"></i> Help
             </button>
             <div className="dropdown-menu">
               <a href="#">Help Center</a>
