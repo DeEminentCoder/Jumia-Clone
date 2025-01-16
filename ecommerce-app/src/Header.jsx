@@ -48,8 +48,7 @@ const Header = () => {
             />
           </div>
 
-          {/* Search Bar */}
-          <div className="search-bar d-flex align-items-center gap-2">
+          <div className="search-bar d-flex align-items-center gap-2 flex-grow-1 me-3">
             <input
               type="text"
               placeholder="🔍 Search products, brands and categories"
