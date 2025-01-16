@@ -38,7 +38,7 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <div className="main-header bg-white shadow-sm">
+      <div className="main-header bg-white shadow-sm py-2 mb-3">
         <div className="container d-flex align-items-center justify-content-between">
           {/* Logo */}
           <div className="site-logo">
