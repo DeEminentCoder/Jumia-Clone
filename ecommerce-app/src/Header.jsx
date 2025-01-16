@@ -38,7 +38,7 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <div className="main-header bg-white shadow-sm py-2 mb-3">
+      <div className="main-header bg-white shadow-sm">
         <div className="container d-flex align-items-center justify-content-between">
           {/* Logo */}
           <div className="site-logo">
@@ -49,7 +49,7 @@ const Header = () => {
           </div>
 
           {/* Search Bar */}
-          <div className="search-bar d-flex align-items-center">
+          <div className="search-bar d-flex align-items-center gap-2">
             <input
               type="text"
               placeholder="🔍 Search products, brands and categories"
