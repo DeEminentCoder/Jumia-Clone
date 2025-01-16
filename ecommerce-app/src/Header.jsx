@@ -57,6 +57,7 @@ const Header = () => {
             />
             <button className="btn text-light">Search</button>
           </div>
+
           {/* Account Dropdown */}
           <div className="dropdown">
             <button className="dropdown-btn btn d-flex">
