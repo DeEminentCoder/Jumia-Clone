@@ -82,7 +82,7 @@ const Header = () => {
               <a href="#">Help Cen ter</a>
               <a href="#">FAQs</a>
               <a href="#">Contact Us</a>
-              <a  href="#">Terms & Policies</a>
+              <a href="#">Terms & Policies</a>
             </div>
           </div>
 
