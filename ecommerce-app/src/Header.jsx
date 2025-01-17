@@ -79,14 +79,14 @@ const Header = () => {
               <i className="bi bi-question-circle fs-4"></i> Help
             </button>
             <div className="dropdown-menu">
-              <a href="#">Help Center</a>
+              <a href="#">Help Cen ter</a>
               <a href="#">FAQs</a>
               <a href="#">Contact Us</a>
-              <a href="#">Terms & Policies</a>
+              <a  href="#">Terms & Policies</a>
             </div>
           </div>
 
-          {/* Cart */}
+          {/* Cart  */}
           <div className="cart">
             <i className="bi bi-cart3"></i>
             <span className="badge bg-danger">3</span>
