@@ -86,7 +86,7 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Cart  */}
+          {/* Cart */}
           <div className="cart">
             <i className="bi bi-cart3"></i>
             <span className="badge bg-danger">3</span>
