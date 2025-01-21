@@ -7,7 +7,6 @@ const Header = () => {
       {/* Top Bar */}
       <div className="top-bar bg-light py-0">
         <div className="container d-flex justify-content-between align-items-center">
-          {/* Left Section */}
           <div className="d-flex align-items-center">
             <img
               src="https://companieslogo.com/img/orig/JMIA-356fb835.png?t=1720244492"
